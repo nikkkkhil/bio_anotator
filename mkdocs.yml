@@ -1,0 +1,44 @@
+# Project information
+site_name: Saber
+site_description: 'Documentation for Saber'
+site_author: 'John Giorgi'
+site_url: 'https://baderlab.github.io/saber/'
+
+# Repository
+repo_name: 'BaderLab/saber'
+repo_url: 'https://github.com/BaderLab/saber'
+
+# Site map
+nav:
+    - About: index.md
+    - Installation: installation.md
+    - Quick Start: quick_start.md
+    - Guide to the Saber API: guide_to_saber_api.md
+    - Resources: resources.md
+
+# Configuration
+theme:
+  language: 'en'
+  name: 'material'
+  logo:
+    icon: 'memory'
+  palette:
+    primary: 'deep purple'
+    accent: 'deep purple'
+
+# Customization
+extra:
+  social:
+      - type: 'github'
+        link: 'https://github.com/BaderLab'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - toc:
+      permalink: true

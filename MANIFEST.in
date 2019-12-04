@@ -1,0 +1,20 @@
+# Include README(s)
+include README.md CONTRIBUTING.md
+
+# Include license file
+include LICENSE.txt
+
+# Include config file(s)
+global-include *.ini *.yml
+
+# Include Dockerfile
+include Dockerfile
+
+# Include test resources
+graft saber/tests
+
+# Include docs
+graft docs
+
+# Don't include notebooks
+prune notebooks
